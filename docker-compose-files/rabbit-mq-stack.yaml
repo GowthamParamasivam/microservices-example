@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.8.16-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+#      - RABBITMQ_ERLANG_COOKIE=SWQOKODSQALRPCLNMEQG
+#    volumes:
+#      - ./.docker/rabbitmq/etc/:/etc/rabbitmq/
+#      - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
+#      - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
+#      - "./enabled_plugins:/etc/rabbitmq/enabled_plugins"
+    ports:
+      - 5672:5672
+      - 15672:15672

@@ -7,9 +7,10 @@
     <groupId>com.gowtham</groupId>
     <artifactId>microservices-example</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
-<!--        <module>sample</module>-->
+        <module>toy-store-service</module>
     </modules>
 
     <properties>
