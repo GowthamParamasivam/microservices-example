@@ -142,3 +142,4 @@ Desktop.ini
 /.idea/
 /docker-compose-files/.docker/
 /docker-compose-files/enabled_plugins/
+.idea
